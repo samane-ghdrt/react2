@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+ import Alert from './Alert'
+ import BuildingALayout from './Building-a-layout'
+import MapingArrayObjectsToLi from './Maping-array-object-to-li';
+ const data = {
+    image: '../../.learn/assets/Dylan.png?raw=true',
+    cardTitle: 'Bob Dylan',
+    cardDescription:
+      'Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer/songwriter, author, and artist who has been an influential figure in popular music and culture for more than five decades.',
+    button: {
+      url: 'https://en.wikipedia.org/wiki/Bob_Dylan',
+      label: 'Go to wikipedia',
+    },
+  };
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+export default function App(){
+return(
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+<Alert text="OMG! Something really bad has happened!" />
+<BuildingALayout sr={data.image} button={data.button} title={data.cardTitle} description={data.cardDescripti0on}/>
 
-export default App
+</>
+);
+}
