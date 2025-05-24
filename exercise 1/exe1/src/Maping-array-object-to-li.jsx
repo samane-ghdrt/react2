@@ -11,7 +11,7 @@ export default function MapingArrayObjectsToLi(){
     return(
        <ul>
          {animals.map((item,index)=>{
-      return (<li key={index}>{item.label}</li>);}
+      return <li key={index}>{item.label}</li>}
         )}
        </ul>
     );

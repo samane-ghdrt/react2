@@ -17,6 +17,7 @@ return(
     <>
 <Alert text="OMG! Something really bad has happened!" />
 <BuildingALayout sr={data.image} button={data.button} title={data.cardTitle} description={data.cardDescripti0on}/>
+<MapingArrayObjectsToLi/>
 
 </>
 );
