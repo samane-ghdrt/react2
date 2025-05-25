@@ -2,7 +2,14 @@
  import BuildingALayout from './Building-a-layout'
 import MapingArrayObjectsToLi from './Maping-array-object-to-li';
 import ShowPlanets from './ShowPlanets ';
-import Pokedex from './Pokedex'
+import Pokedex from './Pokedex';
+import CustomerInformation from './CustomerInformation';
+
+const customer = {
+  first_name: "Bob",
+  last_name: "Dylan",
+}; 
+
  const data = {
     image: '../../.learn/assets/Dylan.png?raw=true',
     cardTitle: 'Bob Dylan',
@@ -22,7 +29,7 @@ return(
 <MapingArrayObjectsToLi/>
 <ShowPlanets/>
 <Pokedex/>
-
+<CustomerInformation fn={customer.first_name} ln={customer.last_name}/>
 </>
 );
 }
