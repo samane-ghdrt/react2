@@ -1,7 +1,8 @@
  import Alert from './Alert'
  import BuildingALayout from './Building-a-layout'
 import MapingArrayObjectsToLi from './Maping-array-object-to-li';
-import ShowPlanets from './ShowPlanets '
+import ShowPlanets from './ShowPlanets ';
+import Pokedex from './Pokedex'
  const data = {
     image: '../../.learn/assets/Dylan.png?raw=true',
     cardTitle: 'Bob Dylan',
@@ -20,6 +21,7 @@ return(
 <BuildingALayout sr={data.image} button={data.button} title={data.cardTitle} description={data.cardDescripti0on}/>
 <MapingArrayObjectsToLi/>
 <ShowPlanets/>
+<Pokedex/>
 
 </>
 );

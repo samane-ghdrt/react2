@@ -1,7 +1,6 @@
 import PokeCard from './Pokecard'
 
-{
-  pokemon: [
+ const pokemon= [
     {
       id: 1,
       name: "Charmander",
@@ -38,18 +37,18 @@ import PokeCard from './Pokecard'
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
     },
   ];
-}
 
-export default function pokemon (){
+
+export default function Pokedex (){
     return(
         <>
-         <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-around">
-        <PokeCard title={PokeCard[0].name} descrip={PokeCard[0].type} src={PokeCard[0].image}/>
-        <PokeCard title={PokeCard[1].name} descrip={PokeCard[1].type} src={PokeCard[1].image}/>
-        <PokeCard title={PokeCard[2].name} descrip={PokeCard[2].type} src={PokeCard[2].image}/>
-        <PokeCard title={PokeCard[3].name} descrip={PokeCard[3].type} src={PokeCard[3].image}/>
-        <PokeCard title={PokeCard[4].name} descrip={PokeCard[4].type} src={PokeCard[4].image}/>
+         <div className="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-around">
+        <PokeCard title={pokemon[0].name} descrip={pokemon[0].type} src={pokemon[0].image}/>
+        <PokeCard title={pokemon[1].name} descrip={pokemon[1].type} src={pokemon[1].image}/>
+        <PokeCard title={pokemon[2].name} descrip={pokemon[2].type} src={pokemon[2].image}/>
+        <PokeCard title={pokemon[3].name} descrip={pokemon[3].type} src={pokemon[3].image}/>
+        <PokeCard title={pokemon[4].name} descrip={pokemon[4].type} src={pokemon[4].image}/>
         </div>
         </>
-    )
-}
+    );
+};
